@@ -85,6 +85,19 @@ public class LL {
         return val;
     }
 
+    public void reverse(){
+        Node current = head, prev = null, next;
+
+        while(current.next != null){
+            next = current.next;
+            current.next = prev;
+
+            prev = current;
+            current = next;
+        }
+        head = prev;
+    }
+
     public Node get(int index){
         Node node = head;
         for(int i = 0; i < index; i++){
