@@ -1,4 +1,3 @@
-# LinkedList
 # Linked List Implementation in Java
 
 This project contains an implementation of a singly linked list in Java. It provides methods to insert, delete, find, and display elements in the list. The linked list supports operations such as adding elements at the beginning, end, and any position, as well as removing elements from the beginning, end, or any position.
