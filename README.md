@@ -12,6 +12,7 @@ This project contains an implementation of a singly linked list in Java. It prov
 - **Delete at Index**: Removes a node at a specified index.
 - **Find**: Finds a node with a specific value.
 - **Display**: Displays the contents of the linked list.
+- **Reverse**: Reverses the order of nodes in the linked list.
 
 ## Methods
 
@@ -39,8 +40,13 @@ Returns the node at the specified index.
 ### 8. `find(int value)`
 Finds and returns the node that contains the specified value.
 
-### 9. `display()`
+### 9. 'reverse()'
+Reverses the order of nodes in the list.
+
+### 10. `display()`
 Displays all the nodes in the linked list.
+
+
 
 ## Class Structure
 
