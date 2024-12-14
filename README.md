@@ -40,7 +40,7 @@ Returns the node at the specified index.
 ### 8. `find(int value)`
 Finds and returns the node that contains the specified value.
 
-### 9. 'reverse()'
+### 9. `reverse()`
 Reverses the order of nodes in the list.
 
 ### 10. `display()`
