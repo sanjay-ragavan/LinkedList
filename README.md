@@ -1,86 +1,85 @@
-# Linked List Implementation in Java
+# Singly Linked List Implementation in Java
 
-This project contains an implementation of a singly linked list in Java. It provides methods to insert, delete, find, and display elements in the list. The linked list supports operations such as adding elements at the beginning, end, and any position, as well as removing elements from the beginning, end, or any position.
+## Overview
+
+This project implements a **Singly Linked List (LL)** in Java. A singly linked list is a data structure where each node contains a reference to the next node, allowing unidirectional traversal. This implementation supports operations like inserting at the beginning, at the end, at a specific index, reversing the list, and deleting nodes.
+
+---
 
 ## Features
 
-- **Insert First**: Adds a new node at the beginning of the list.
-- **Insert Last**: Adds a new node at the end of the list.
-- **Insert at Index**: Inserts a new node at a specified index in the list.
-- **Delete First**: Removes the first node from the list.
-- **Delete Last**: Removes the last node from the list.
-- **Delete at Index**: Removes a node at a specified index.
-- **Find**: Finds a node with a specific value.
-- **Display**: Displays the contents of the linked list.
-- **Reverse**: Reverses the order of nodes in the linked list.
+1. **Insert First**: Adds a new node at the beginning of the list.  
+2. **Insert Last**: Adds a new node at the end of the list.  
+3. **Insert at Index**: Adds a new node at a specified index.  
+4. **Delete First**: Removes the first node from the list.  
+5. **Delete Last**: Removes the last node from the list.  
+6. **Delete at Index**: Removes a node at a specified index.  
+7. **Reverse**: Reverses the entire list.  
+8. **Display**: Prints the elements in the list.  
+9. **Search**: Finds a node with the specified value.  
 
-## Methods
+---
 
-### 1. `insertFirst(int data)`
-Adds a node with the specified data at the beginning of the list.
+## Code Structure
 
-### 2. `insertLast(int data)`
-Adds a node with the specified data at the end of the list.
+### **Classes**  
+- **`LL`**: The core implementation of the singly linked list.  
+- **`Node`**: Represents a single node in the singly linked list.  
+- **`Main`**: Demonstrates the usage of the singly linked list.  
 
-### 3. `insert(int index, int data)`
-Inserts a node with the specified data at a given index.
+### **LL Class Methods**
 
-### 4. `deleteFirst()`
-Removes the first node from the list and returns its data.
+| Method            | Description                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| `insertFirst(int)` | Adds a node at the beginning of the list.                                  |
+| `insertLast(int)`  | Adds a node at the end of the list.                                        |
+| `insert(int, int)` | Adds a node at a specified index in the list.                              |
+| `deleteFirst()`    | Removes the first node from the list.                                      |
+| `deleteLast()`     | Removes the last node from the list.                                       |
+| `delete(int)`      | Removes a node at a specified index in the list.                          |
+| `reverse()`        | Reverses the list.                                                        |
+| `display()`        | Displays all the nodes in the list.                                       |
+| `find(int)`        | Finds a node with the specified value.                                    |
 
-### 5. `deleteLast()`
-Removes the last node from the list and returns its data.
+---
 
-### 6. `delete(int index)`
-Removes a node at a specified index and returns its data.
+## How to Use
 
-### 7. `get(int index)`
-Returns the node at the specified index.
+1. Clone this repository or copy the code.  
+2. Compile and run the `Main` class.  
+3. The `Main` class demonstrates inserting, deleting, and displaying nodes in the list.
 
-### 8. `find(int value)`
-Finds and returns the node that contains the specified value.
-
-### 9. `reverse()`
-Reverses the order of nodes in the list.
-
-### 10. `display()`
-Displays all the nodes in the linked list.
-
-
-
-## Class Structure
-
-### `LL` Class
-The `LL` class is the main class for the linked list implementation. It contains the following private attributes:
-- `head`: The first node of the list.
-- `tail`: The last node of the list.
-- `size`: The size of the linked list.
-
-### `Node` Class
-The `Node` class is a nested class used to represent each element in the list. It has the following attributes:
-- `data`: The value of the node.
-- `next`: A reference to the next node in the list.
-
-## Example Usage
+### Example Usage (from `Main` class)
 
 ```java
 public class Main {
     public static void main(String[] args) {
-        LL linkedList = new LL();
-
-        // Insert elements
-        linkedList.insertFirst(10);
-        linkedList.insertFirst(20);
-        linkedList.insertLast(30);
-
-        // Display the list
-        linkedList.display();
-
-        // Delete elements
-        linkedList.delete(1); // Deletes the second node
-        linkedList.deleteLast(); // Deletes the last node
-
-        // Display the list again
-        linkedList.display();
+        LL list = new LL();
+        list.insertFirst(1);   // Insert 1 at the beginning
+        list.insertLast(2);    // Insert 2 at the end
+        list.insertLast(3);    // Insert 3 at the end
+        list.insertLast(4);    // Insert 4 at the end
+        list.display();        // Display the list
+        list.deleteFist();     // Delete the first node
+        list.display();        // Display the updated list
     }
 }
+```
+
+---
+
+## Sample Output
+
+```
+1 -> 2 -> 3 -> 4 -> End
+2 -> 3 -> 4 -> End
+```
+
+---
+
+## Customization
+
+- Update the `Main` class to include more operations or test cases.
+- Extend the `LL` class with additional functionalities like finding the size of the list or more advanced search features.
+
+---
